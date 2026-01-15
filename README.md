@@ -54,7 +54,7 @@ VIPER covers diverse reasoning tasks to ensure a holistic evaluation of video ge
 ## 🚀 Quick Start
 
 ### Download
-```
+```Python
 from datasets import load_dataset
 
 # Load the full VIPER benchmark

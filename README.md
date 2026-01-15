@@ -3,7 +3,7 @@
 <h1>Beyond the Last Frame: Process-aware Evaluation for <br> Generative Video Reasoning</h1>
 
 <div align="center">
-  <a href='https://arxiv.org/abs/2512.24952'><img src='https://img.shields.io/badge/Paper-Arxiv-red'></a>
+  <a href='https://arxiv.org/abs/2512.24952'><img src='https://img.shields.io/badge/Arxiv-2512.24952-red'></a>
   <a href='https://huggingface.co/datasets/Monosail/VIPER'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Benchmark-yellow'></a>
 </div>
 

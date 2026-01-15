@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="assets/outcome_hack.png" width="85%"> <br>
-  <em>Illustration of Outcome-hacking. The model generates the correct final state but fails the intermediate reasoning process.</em>
+  <em>Illustration of Outcome-hacking. The model generates video with the correct final state but wrong reasoning process.</em>
 </p>
 
 </div>
@@ -31,8 +31,8 @@ Current video generation models often suffer from **Outcome-hacking**: they may 
 ---
 <div>
 <p align="center">
-  <img src="assets/outcome_hack.png" width="85%"> <br>
-  <em>Overview of VIPER.</em>
+  <img src="assets/overview.png" width="85%"> <br>
+  <em>Overview of VIPER. VIPER consists of 16 tasks from 6 domains</em>
 </p>
 </div>
 

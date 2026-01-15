@@ -11,7 +11,7 @@
 
 <p align="center">
   <img src="assets/outcome_hack.png" width="85%"> <br>
-  <em>Illustration of Outcome-hacking. The model generates video with the correct final state but wrong reasoning process.</em>
+  <em>Illustration of outcome-hacking, where the generated video has the correct final state but an incorrect process.</em>
 </p>
 
 </div>

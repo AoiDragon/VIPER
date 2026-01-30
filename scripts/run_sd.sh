@@ -12,8 +12,11 @@ if [ -f ".env" ]; then
   set +a
 fi
 
+# Adapt the data into json
+pyython data_helper.py 
+
 python models/standalone/seedance.py \
-  --input_json data/dummy_input.json \
+  --input_json data/viper.json \
   --output_root ./results \
   --model doubao-seedance-1-5-pro-251215 \
   --roll 1

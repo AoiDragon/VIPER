@@ -12,8 +12,11 @@ if [ -f ".env" ]; then
   set +a
 fi
 
+# Adapt the data into json
+pyython data_helper.py 
+
 python models/standalone/wan26.py \
-  --input_json data/dummy_input.json \
+  --input_json data/viper.json \
   --output_root ./results \
   --model wan2.6-i2v \
   --roll 1 \

@@ -72,7 +72,49 @@ dataset = load_dataset("Monosail/VIPER")
 - `reference_texts`: Ground-truth text descriptions
 - `protocol`: Process-level task constraints
 
-## 🛠️ Evaluation (Coming Soon)
+## 🛠️ Evaluation
+
+The evaluation pipeline is split into two stages: **inference** and **judgement**.
+During **inference**, we provide scripts to generate inference outputs on the **VIPER** datasets using the following supported models:
+- **Closed-source (API)**
+  - Sora2  
+  - Veo3.1  
+  - Seedance 1.5 Pro (Opened)  
+  - Wan2.6 (Opened)  
+- **Open-source**
+  - Wan2.2  
+  - Hunyuan-1.5  
+During **judgement**, we use the **OpenRouter API** and default to **gpt-5**. You may use any MLLM as long as it is compatible with the provider endpoint.
+
+### Inference
+
+#### Seedance 1.5 pro
+
+To run video inference with Seedance 1.5 Pro:
+```bash
+bash scripts/run_sd.sh
+```
+Prerequisites:
+
+- Apply for the [Seedance API](https://console.volcengine.com/ark/region:ark+cn-beijing/model/detail?Id=doubao-seedance-1-5-pro)
+- Set the environment variable `ARK_API_KEY`
+
+#### Wan2.6
+
+To run video inference with Wan2.6:
+
+```bash
+bash scripts/run_wan26.sh
+```
+Prerequisites:
+
+- Apply for the [Wan2.6 api](https://bailian.console.aliyun.com/cn-beijing/#/home)
+- Set the environment variable `DASHSCOPE_API_KEY`
+
+### Judgement
+
+
+
 
 ## 📝 Citation
 

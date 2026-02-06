@@ -1,0 +1,32 @@
+[
+    {
+        "id": "experiment_0",
+        "domain": "Physics",
+        "task_type": "experiment",
+        "prompt": "A person sits on a chair and keeps spinning. Initially, the arms are extended horizontally, then gradually fall and rest by the sides. Static camera, no pan, no zoom, no dolly.",
+        "image": "data/images/experiment_0_image.jpg",
+        "reference_frames": [],
+        "reference_text": [],
+        "protocol": [
+            "The spinning speed should increase as the arms fall."
+        ],
+        "server_url": [
+            "sample_data/dummy_output/dummy_out_video/experiment_0_0.mp4"
+        ]
+    },
+    {
+        "id": "experiment_1",
+        "domain": "Physics",
+        "task_type": "experiment",
+        "prompt": "A person sits on a chair and keeps spinning. Initially, the arms are rest by his sides, then gradually rise and extend horizontally. Static camera, no pan, no zoom, no dolly.",
+        "image": "data/images/experiment_1_image.jpg",
+        "reference_frames": [],
+        "reference_text": [],
+        "protocol": [
+            "The spinning speed should decrease as the arms rise."
+        ],
+        "server_url": [
+            "sample_data/dummy_output/dummy_out_video/experiment_1_0.mp4"
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "item_id": "experiment_1",
+        "domain": "Physics",
+        "server_url": "sample_data/dummpy_output/dummy_out_video/experiment_1_0.mp4",
+        "video_idx": 0,
+        "task_prompt": "A person sits on a chair and keeps spinning. Initially, the arms are rest by his sides, then gradually rise and extend horizontally. Static camera, no pan, no zoom, no dolly.",
+        "protocol": [
+            "The spinning speed should decrease as the arms rise."
+        ],
+        "raw_answer": "<think>\nLet's carefully analyze the video frames and the given task.\n\n**Task prompt:** A person sits on a chair and keeps spinning. Initially, the arms are by his sides, then gradually rise and extend horizontally. The camera remains static.\n\n**Process constraint:** The spinning speed should decrease as the arms rise.\n\n**Initial image:** The person sits on a swivel chair holding weights, arms at his sides.\n\n**Generated video analysis:**\n- Across the frames, the person begins with arms down (frame 1) and gradually lifts them until they are horizontally extended (final frame). This matches the description of the arm motion in the task prompt.\n- The person’s orientation slightly changes across frames, indicating some spinning, but the background and camera remain static — fulfilling the camera constraint.\n- Regarding **spinning speed vs. arm position**, the frames show continued motion but do not depict a noticeable *decrease* in spinning speed as arms rise. If anything, the rotational position changes at a mostly uniform rate, not reflecting a slow-down as dictated by conservation of angular momentum.\n\n**Process consistency:**  \nThe spin is consistent, but there is no evident slowing as the arms extend, violating the physical constraint (speed should decrease). So, process consistency is **incorrect**.\n\n**Outcome consistency:**  \nAt least one frame (final frames) shows the person with arms fully extended horizontally while spinning. This satisfies the prompt requirement that the person ends up spinning with arms horizontal. Therefore, outcome consistency is **correct**.\n\nBecause both process and outcome must be fulfilled, and process is not, the final **decision** is **incorrect**.\n</think>\n\n<answer>\n{\n    \"process_consistency\": \"incorrect\",\n    \"outcome_consistency\": \"correct\",\n    \"decision\": \"incorrect\"\n}\n</answer>",
+        "decision": "incorrect",
+        "process_consistency": "incorrect",
+        "outcome_consistency": "correct",
+        "success": true,
+        "error": ""
+    },
+    {
+        "item_id": "experiment_0",
+        "domain": "Physics",
+        "server_url": "sample_data/dummpy_output/dummy_out_video/experiment_0_0.mp4",
+        "video_idx": 0,
+        "task_prompt": "A person sits on a chair and keeps spinning. Initially, the arms are extended horizontally, then gradually fall and rest by the sides. Static camera, no pan, no zoom, no dolly.",
+        "protocol": [
+            "The spinning speed should increase as the arms fall."
+        ],
+        "raw_answer": "<think>\nLet's analyze the given materials carefully.\n\n**Task Prompt:**  \nA person sits on a chair and keeps spinning. Initially, the arms are extended horizontally, then gradually fall and rest by the sides. Static camera.\n\n**Process Constraint:**  \nThe spinning speed should increase as the arms fall.\n\n**Initial Image:**  \nShows a person sitting on a swivel chair, arms extended horizontally with dumbbells.\n\n**Generated Video Frames:**  \n1. Frame 1 — Person with arms extended holding dumbbells, chair orientation same as initial.\n2. Frame 2 — The person begins lowering arms, chair rotation has changed slightly.\n3. Frame 3–5 — Arms fully lowered beside the body, chair orientation changes further, then returns to center.\n\nNow, assessing the two main criteria:\n\n### 1. Process Consistency\nWe must check that in **all frames**, the process constraint—“spinning speed increases as the arms fall”—is represented.  \nFrom the sequence:  \n- The person rotates, but the rotational change appears evenly spaced, not accelerating.  \n- There’s no clear acceleration in spin rate as arms drop—it seems more at a constant or even slower pace.  \nThus, the process constraint is **not properly maintained** in all frames.\n\n### 2. Outcome Consistency\nWe must check that in **at least one frame**, the prompt (“a person sits on a chair and keeps spinning; arms start extended then rest by sides”) is fulfilled.  \nYes, by the final frames, the person’s arms are at sides while he is still rotating slightly on the chair — satisfying the main outcome qualitatively.\n\nSo:\n- Process consistency: incorrect (speed constraint violated).\n- Outcome consistency: correct (final posture and ongoing spin achieved).\n\nFinal Decision: since both conditions must be correct, and one fails, the overall video is **incorrect**.\n</think>\n\n<answer>\n{\n    \"process_consistency\": \"incorrect\",\n    \"outcome_consistency\": \"correct\",\n    \"decision\": \"incorrect\"\n}\n</answer>",
+        "decision": "incorrect",
+        "process_consistency": "incorrect",
+        "outcome_consistency": "correct",
+        "success": true,
+        "error": ""
+    }
+]

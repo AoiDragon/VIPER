@@ -1,0 +1,1 @@
+This task belongs to the Structural Reasoning domain. The evaluation should focus on the model's ability to process and generate content based on strict, predefined rules, constraints, and structured environments (e.g., games, puzzles, geometric layouts).

@@ -17,7 +17,7 @@ pyython data_helper.py
 
 python models/standalone/seedance.py \
   --input_json data/viper.json \
-  --output_root ./results \
+  --output_root ./results/video_inference \
   --model doubao-seedance-1-5-pro-251215 \
   --roll 1
 

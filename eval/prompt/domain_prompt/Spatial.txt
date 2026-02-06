@@ -1,0 +1,1 @@
+This task belongs to the Spatial Reasoning domain. The evaluation should focus on the model's understanding of 3D space, geometric structures, perspective, and the relative positions of objects.

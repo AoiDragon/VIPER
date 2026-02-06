@@ -17,7 +17,7 @@ pyython data_helper.py
 
 python models/standalone/wan26.py \
   --input_json data/viper.json \
-  --output_root ./results \
+  --output_root ./results/video_inference \
   --model wan2.6-i2v \
   --roll 1 \
   --resolution 720P

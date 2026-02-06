@@ -113,7 +113,22 @@ Prerequisites:
 
 ### Judgement
 
- 
+The whole judgement consists of vlm-as-a-judge which calls external vlm for correctness and scoring which summaries the original returns into pass@k acc table, which are both covered in one script. 
+
+A sample command to run judgement on seedance model is provided below. Check the script for more info including running on single file, controlling the precise behavior or resume from former files.
+```bash
+eval/scripts/eval.sh \
+  --data_path ./results/video_inference/test_doubao-seedance-1-5-pro-251215 \
+  --output_path ./results/vlm_judge/test_doubao-seedance-1-5-pro-251215 \
+  --fps 1.0 \
+  --model_name gpt-5-chat-2025-08-07 \
+  --pass_k 1 \
+  --max_workers 8
+```
+
+Notes:
+- In our experiment, we use [OpenRouter](https://openrouter.ai/) as our API vendor to maximize compatibility. If you have access, put `OPENROUTER_API_KEY` in the `.env` file.
+- As far as we know, the OpenRouter API is compatible with official implementations. You can check and implement your API vendor in `eval/scripts/gpt-4o.py`.
 
 
 ## 📝 Citation

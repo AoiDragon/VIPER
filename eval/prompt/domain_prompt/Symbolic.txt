@@ -1,0 +1,1 @@
+This video belongs to the Symbolic Reasoning domain. The evaluation should focus on the model's ability to interpret, manipulate, and generate abstract symbols (numbers, text, logical operators) to solve problems.

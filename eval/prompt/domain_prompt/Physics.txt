@@ -1,0 +1,1 @@
+This task belongs to the Physical Reasoning domain. The evaluation should focus on the model's ability to simulate accurate physical laws, (e.g., gravity, collision dynamics, material properties).

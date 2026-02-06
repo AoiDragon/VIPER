@@ -1,0 +1,1 @@
+This task belongs to the Temporal Reasoning domain. The evaluation should focus on the model's ability to accurately track and represent the dynamic evolution of objects, scenes, and actions over time.
